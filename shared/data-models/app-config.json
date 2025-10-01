@@ -1,0 +1,129 @@
+{
+  "version": "1.0.0",
+  "rss_feeds": [
+    {
+      "id": 1,
+      "url": "https://www.drogues-info-service.fr/rss",
+      "title": "Drogues Info Service - Actualités",
+      "description": "Actualités et informations sur les drogues et les addictions",
+      "enabled": true,
+      "update_frequency": 3600,
+      "category": "Information"
+    },
+    {
+      "id": 2,
+      "url": "https://www.federationaddiction.fr/feed/",
+      "title": "Fédération Addiction",
+      "description": "Actualités de la Fédération Addiction",
+      "enabled": true,
+      "update_frequency": 3600,
+      "category": "Actualités"
+    }
+  ],
+  "default_products": [
+    {
+      "name": "Bière",
+      "category": "alcool",
+      "default_unit": "ml",
+      "icon": "🍺",
+      "color": "#FFA500"
+    },
+    {
+      "name": "Vin",
+      "category": "alcool",
+      "default_unit": "ml",
+      "icon": "🍷",
+      "color": "#8B0000"
+    },
+    {
+      "name": "Spiritueux",
+      "category": "alcool",
+      "default_unit": "ml",
+      "icon": "🥃",
+      "color": "#CD853F"
+    },
+    {
+      "name": "Cigarette",
+      "category": "tabac",
+      "default_unit": "unité",
+      "icon": "🚬",
+      "color": "#808080"
+    },
+    {
+      "name": "Cannabis",
+      "category": "cannabis",
+      "default_unit": "g",
+      "icon": "🌿",
+      "color": "#228B22"
+    }
+  ],
+  "app_settings": {
+    "pin_enabled": true,
+    "auto_lock_timeout": 60,
+    "theme": "light",
+    "language": "fr",
+    "rss_enabled": true,
+    "export_include_notes": true,
+    "statistics_cache_days": 30,
+    "notification_enabled": false
+  },
+  "export_formats": [
+    {
+      "format": "pdf",
+      "description": "Rapport complet avec graphiques",
+      "extension": ".pdf",
+      "mime_type": "application/pdf"
+    },
+    {
+      "format": "csv",
+      "description": "Données tabulaires pour tableur",
+      "extension": ".csv",
+      "mime_type": "text/csv"
+    },
+    {
+      "format": "json",
+      "description": "Données brutes structurées",
+      "extension": ".json",
+      "mime_type": "application/json"
+    }
+  ],
+  "chart_types": [
+    {
+      "type": "line",
+      "name": "Graphique linéaire",
+      "description": "Évolution dans le temps"
+    },
+    {
+      "type": "bar",
+      "name": "Graphique en barres",
+      "description": "Comparaison des quantités"
+    },
+    {
+      "type": "pie",
+      "name": "Graphique circulaire",
+      "description": "Répartition par catégorie"
+    }
+  ],
+  "time_periods": [
+    {
+      "id": "week",
+      "name": "Semaine",
+      "days": 7
+    },
+    {
+      "id": "month",
+      "name": "Mois",
+      "days": 30
+    },
+    {
+      "id": "quarter",
+      "name": "Trimestre",
+      "days": 90
+    },
+    {
+      "id": "year",
+      "name": "Année",
+      "days": 365
+    }
+  ]
+}
